@@ -1,10 +1,12 @@
-# > Futu / Futubull / FutuNiuNiu / Moomoo
-# > 富途牛牛 / Futubull / Moomoo 分流规则
-# > 用法：在 Shadowrocket 里将本规则集指定到香港节点或香港策略组
+# > Futu / Futubull / Moomoo 分流规则
+# > 用法：在 Shadowrocket/Stash 中将本规则集指定到香港节点或香港策略组
+# > 注意：远程规则集文件内不要写 PROXY / 香港 / DIRECT
 
-# Futu core
+# --- Futu core ---
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,fututrade.com
+DOMAIN-SUFFIX,futunn.cn
 DOMAIN-SUFFIX,futubull.com
 DOMAIN-SUFFIX,futuhk.com
 DOMAIN-SUFFIX,futufin.com
@@ -12,11 +14,20 @@ DOMAIN-SUFFIX,futuholdings.com
 DOMAIN-SUFFIX,futuniuniu.com
 DOMAIN-SUFFIX,futuesop.com
 
-# Moomoo core
+# --- Futu aggressive supplement ---
+DOMAIN-SUFFIX,futusign.com
+DOMAIN-SUFFIX,futuinc.com
+DOMAIN-SUFFIX,futusecurities.com
+DOMAIN-SUFFIX,futumkt.com
+DOMAIN-SUFFIX,futu.sg
+DOMAIN-SUFFIX,futu.au
+DOMAIN-SUFFIX,futusg.com
+
+# --- Moomoo core ---
 DOMAIN-SUFFIX,moomoo.com
 DOMAIN-SUFFIX,moomoo-us.com
 
-# Aggressive fallback
+# --- Aggressive fallback ---
 DOMAIN-KEYWORD,futunn
 DOMAIN-KEYWORD,futubull
 DOMAIN-KEYWORD,futuhk
