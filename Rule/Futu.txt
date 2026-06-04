@@ -1,0 +1,27 @@
+# > Futu / Futubull / FutuNiuNiu / Moomoo
+# > 富途牛牛 / Futubull / Moomoo 分流规则
+# > 用法：在 Shadowrocket 里将本规则集指定到香港节点或香港策略组
+
+# Futu core
+DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,futubull.com
+DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futufin.com
+DOMAIN-SUFFIX,futuholdings.com
+DOMAIN-SUFFIX,futuniuniu.com
+DOMAIN-SUFFIX,futuesop.com
+
+# Moomoo core
+DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,moomoo-us.com
+
+# Aggressive fallback
+DOMAIN-KEYWORD,futunn
+DOMAIN-KEYWORD,futubull
+DOMAIN-KEYWORD,futuhk
+DOMAIN-KEYWORD,futufin
+DOMAIN-KEYWORD,futuholdings
+DOMAIN-KEYWORD,futuniuniu
+DOMAIN-KEYWORD,futuesop
+DOMAIN-KEYWORD,moomoo
