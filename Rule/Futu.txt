@@ -12,6 +12,7 @@ DOMAIN,update.futunn.com
 
 # Futu core
 DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,futuhn.com
 DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,futubull.com
 DOMAIN-SUFFIX,futuhk.com
