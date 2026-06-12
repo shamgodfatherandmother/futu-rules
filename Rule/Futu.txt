@@ -106,6 +106,8 @@ IP-CIDR,115.159.18.59/32,no-resolve
 IP-CIDR,134.175.254.224/32,no-resolve
 IP-CIDR,175.178.207.81/32,no-resolve
 IP-CIDR,106.55.67.68/32,no-resolve
+IP-CIDR,120.233.50.34/32,no-resolve
+
 
 # Tencent IM / push observed in Futu logs
 IP-CIDR,221.229.52.0/24,no-resolve
