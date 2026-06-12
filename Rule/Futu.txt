@@ -1,70 +1,90 @@
-> Futu / Futubull / FutuNiuNiu / Moomoo
+— Futu / Futubull / Moomoo local override —
 
-> 富途牛牛 / Futubull / Moomoo 分流规则
+— Must be placed before REJECT / DIRECT / GEOIP / IP-ASN / FINAL rules —
 
-> 用法：在 Shadowrocket / Stash 中将本规则集指定到稳定的香港节点或香港策略组
+— If your Hong Kong strategy group is not named PROXY, replace PROXY with your actual group name —
 
-> 注意：远程规则集文件内不要写 PROXY / 香港 / DIRECT
+Futu core
 
-— Futu core —
+DOMAIN-SUFFIX,futunn.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futu5.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,fututrade.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futunn.cn,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futubull.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futuhk.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futufin.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futuholdings.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futuniuniu.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futuesop.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futusign.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futuinc.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futusecurities.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futumkt.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futu.sg,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futu.au,PROXY,force-remote-dns
+DOMAIN-SUFFIX,futusg.com,PROXY,force-remote-dns
 
-DOMAIN-SUFFIX,futunn.com
-DOMAIN-SUFFIX,futu5.com
-DOMAIN-SUFFIX,fututrade.com
-DOMAIN-SUFFIX,futunn.cn
-DOMAIN-SUFFIX,futubull.com
-DOMAIN-SUFFIX,futuhk.com
-DOMAIN-SUFFIX,futufin.com
-DOMAIN-SUFFIX,futuholdings.com
-DOMAIN-SUFFIX,futuniuniu.com
-DOMAIN-SUFFIX,futuesop.com
+Moomoo core
 
-— Futu aggressive supplement —
+DOMAIN-SUFFIX,moomoo.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,moomoo-us.com,PROXY,force-remote-dns
 
-DOMAIN-SUFFIX,futusign.com
-DOMAIN-SUFFIX,futuinc.com
-DOMAIN-SUFFIX,futusecurities.com
-DOMAIN-SUFFIX,futumkt.com
-DOMAIN-SUFFIX,futu.sg
-DOMAIN-SUFFIX,futu.au
-DOMAIN-SUFFIX,futusg.com
+Futu observed subdomains
 
-— Moomoo core —
+DOMAIN,api.futunn.com,PROXY,force-remote-dns
+DOMAIN,api5.futunn.com,PROXY,force-remote-dns
+DOMAIN,auth.futunn.com,PROXY,force-remote-dns
+DOMAIN,collect.futunn.com,PROXY,force-remote-dns
+DOMAIN,conf.futunn.com,PROXY,force-remote-dns
+DOMAIN,update.futunn.com,PROXY,force-remote-dns
 
-DOMAIN-SUFFIX,moomoo.com
-DOMAIN-SUFFIX,moomoo-us.com
+Tencent Cloud services observed during Futu trading flow
 
-— Observed Futu App auxiliary domains —
+DOMAIN-SUFFIX,qcloud.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,myqcloud.com,PROXY,force-remote-dns
+IP-ASN,132203,PROXY,no-resolve
 
-DOMAIN,shortconn.im.qcloud.com
-DOMAIN,license.vod2.myqcloud.com
+Analytics / attribution services observed only when Futu is opened
 
-— Aggressive fallback —
+DOMAIN,app-analytics-services.com,PROXY,force-remote-dns
+DOMAIN,api-adservices.apple.com,PROXY,force-remote-dns
+DOMAIN,ca.iadsdk.apple.com,PROXY,force-remote-dns
+DOMAIN,amp-api-edge.apps.apple.com,PROXY,force-remote-dns
+DOMAIN-SUFFIX,appsflyersdk.com,PROXY,force-remote-dns
 
-DOMAIN-KEYWORD,futunn
-DOMAIN-KEYWORD,futubull
-DOMAIN-KEYWORD,futuhk
-DOMAIN-KEYWORD,futufin
-DOMAIN-KEYWORD,futuholdings
-DOMAIN-KEYWORD,futuniuniu
-DOMAIN-KEYWORD,futuesop
-DOMAIN-KEYWORD,moomoo
+Futu keyword fallback
 
-— Observed Futu App IP fallback —
+DOMAIN-KEYWORD,futunn,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futubull,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futuhk,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futufin,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futuholdings,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futuniuniu,PROXY,force-remote-dns
+DOMAIN-KEYWORD,futuesop,PROXY,force-remote-dns
+DOMAIN-KEYWORD,moomoo,PROXY,force-remote-dns
 
-IP-CIDR,1.14.242.168/32,no-resolve
-IP-CIDR,14.152.91.153/32,no-resolve
-IP-CIDR,42.193.128.207/32,no-resolve
-IP-CIDR,43.132.106.6/32,no-resolve
-IP-CIDR,43.142.232.62/32,no-resolve
-IP-CIDR,43.153.233.166/32,no-resolve
-IP-CIDR,43.153.233.212/32,no-resolve
-IP-CIDR,49.51.78.82/32,no-resolve
-IP-CIDR,115.159.18.59/32,no-resolve
-IP-CIDR,119.28.37.206/32,no-resolve
-IP-CIDR,119.91.245.125/32,no-resolve
-IP-CIDR,119.91.245.213/32,no-resolve
-IP-CIDR,121.5.99.180/32,no-resolve
-IP-CIDR,124.156.233.21/32,no-resolve
-IP-CIDR,170.106.62.85/32,no-resolve
-IP-CIDR,193.112.84.42/32,no-resolve
+Observed Futu App IP fallback
+
+IP-CIDR,1.14.242.168/32,PROXY,no-resolve
+IP-CIDR,14.152.91.153/32,PROXY,no-resolve
+IP-CIDR,42.193.128.207/32,PROXY,no-resolve
+IP-CIDR,42.194.152.250/32,PROXY,no-resolve
+IP-CIDR,43.132.106.6/32,PROXY,no-resolve
+IP-CIDR,43.132.138.67/32,PROXY,no-resolve
+IP-CIDR,43.142.232.62/32,PROXY,no-resolve
+IP-CIDR,43.153.191.169/32,PROXY,no-resolve
+IP-CIDR,43.153.233.166/32,PROXY,no-resolve
+IP-CIDR,43.153.233.178/32,PROXY,no-resolve
+IP-CIDR,43.153.233.212/32,PROXY,no-resolve
+IP-CIDR,49.51.78.82/32,PROXY,no-resolve
+IP-CIDR,111.230.214.240/32,PROXY,no-resolve
+IP-CIDR,115.159.18.59/32,PROXY,no-resolve
+IP-CIDR,119.28.37.206/32,PROXY,no-resolve
+IP-CIDR,119.28.183.55/32,PROXY,no-resolve
+IP-CIDR,119.91.245.125/32,PROXY,no-resolve
+IP-CIDR,119.91.245.213/32,PROXY,no-resolve
+IP-CIDR,121.5.99.180/32,PROXY,no-resolve
+IP-CIDR,124.156.233.21/32,PROXY,no-resolve
+IP-CIDR,170.106.62.85/32,PROXY,no-resolve
+IP-CIDR,170.106.201.247/32,PROXY,no-resolve
+IP-CIDR,193.112.84.42/32,PROXY,no-resolve
