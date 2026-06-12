@@ -2,6 +2,14 @@
 # > Shadowrocket RULE-SET format
 # > 不要在本文件里写 PROXY / DIRECT / 香港 / force-remote-dns
 
+# Futu exact domains
+DOMAIN,api.futunn.com
+DOMAIN,api5.futunn.com
+DOMAIN,auth.futunn.com
+DOMAIN,collect.futunn.com
+DOMAIN,conf.futunn.com
+DOMAIN,update.futunn.com
+
 # Futu core
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futu5.com
@@ -42,3 +50,7 @@ IP-CIDR,170.106.201.73/32,no-resolve
 IP-CIDR,170.106.201.247/32,no-resolve
 IP-CIDR,129.226.79.239/32,no-resolve
 IP-CIDR,101.32.198.91/32,no-resolve
+IP-CIDR,111.230.214.240/32,no-resolve
+IP-CIDR,42.193.128.207/32,no-resolve
+IP-CIDR,121.5.99.18/32,no-resolve
+IP-CIDR,106.55.66.8/32,no-resolve
