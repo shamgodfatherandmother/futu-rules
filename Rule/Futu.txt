@@ -59,6 +59,12 @@ IP-CIDR,111.230.214.240/32,no-resolve
 IP-CIDR,42.193.128.207/32,no-resolve
 IP-CIDR,121.5.99.18/32,no-resolve
 IP-CIDR,106.55.66.8/32,no-resolve
+IP-CIDR,43.142.232.62/32,no-resolve
+IP-CIDR,111.230.119.192/32,no-resolve
+IP-CIDR,134.175.254.224/32,no-resolve
+IP-CIDR,101.33.192.94/32,no-resolve
+IP-CIDR,119.147.110.185/32,no-resolve
+IP-CIDR,14.152.91.153/32,no-resolve
 
 # Additional IPs observed in logs (GEOIP,CN hits — not covered by ASN 132203)
 IP-CIDR,121.5.99.180/32,no-resolve
