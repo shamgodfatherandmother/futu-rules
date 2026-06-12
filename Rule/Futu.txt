@@ -13,6 +13,9 @@ DOMAIN-SUFFIX,futufin.com
 DOMAIN-SUFFIX,futuholdings.com
 DOMAIN-SUFFIX,futuniuniu.com
 DOMAIN-SUFFIX,futuesop.com
+DOMAIN-SUFFIX,futunh.com
+DOMAIN-SUFFIX,cloud.tencent.com
+
 
 # --- Futu aggressive supplement ---
 DOMAIN-SUFFIX,futusign.com
