@@ -1,8 +1,13 @@
-# > Futu / Futubull / Moomoo 分流规则
-# > 用法：在 Shadowrocket/Stash 中将本规则集指定到香港节点或香港策略组
-# > 注意：远程规则集文件内不要写 PROXY / 香港 / DIRECT
+> Futu / Futubull / FutuNiuNiu / Moomoo
 
-# --- Futu core ---
+> 富途牛牛 / Futubull / Moomoo 分流规则
+
+> 用法：在 Shadowrocket / Stash 中将本规则集指定到稳定的香港节点或香港策略组
+
+> 注意：远程规则集文件内不要写 PROXY / 香港 / DIRECT
+
+— Futu core —
+
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futu5.com
 DOMAIN-SUFFIX,fututrade.com
@@ -13,11 +18,9 @@ DOMAIN-SUFFIX,futufin.com
 DOMAIN-SUFFIX,futuholdings.com
 DOMAIN-SUFFIX,futuniuniu.com
 DOMAIN-SUFFIX,futuesop.com
-DOMAIN-SUFFIX,futunh.com
-DOMAIN-SUFFIX,cloud.tencent.com
 
+— Futu aggressive supplement —
 
-# --- Futu aggressive supplement ---
 DOMAIN-SUFFIX,futusign.com
 DOMAIN-SUFFIX,futuinc.com
 DOMAIN-SUFFIX,futusecurities.com
@@ -26,11 +29,18 @@ DOMAIN-SUFFIX,futu.sg
 DOMAIN-SUFFIX,futu.au
 DOMAIN-SUFFIX,futusg.com
 
-# --- Moomoo core ---
+— Moomoo core —
+
 DOMAIN-SUFFIX,moomoo.com
 DOMAIN-SUFFIX,moomoo-us.com
 
-# --- Aggressive fallback ---
+— Observed Futu App auxiliary domains —
+
+DOMAIN,shortconn.im.qcloud.com
+DOMAIN,license.vod2.myqcloud.com
+
+— Aggressive fallback —
+
 DOMAIN-KEYWORD,futunn
 DOMAIN-KEYWORD,futubull
 DOMAIN-KEYWORD,futuhk
@@ -40,6 +50,21 @@ DOMAIN-KEYWORD,futuniuniu
 DOMAIN-KEYWORD,futuesop
 DOMAIN-KEYWORD,moomoo
 
-# --- Observed IP fallback from Futu App logs ---
+— Observed Futu App IP fallback —
+
+IP-CIDR,1.14.242.168/32,no-resolve
+IP-CIDR,14.152.91.153/32,no-resolve
+IP-CIDR,42.193.128.207/32,no-resolve
+IP-CIDR,43.132.106.6/32,no-resolve
+IP-CIDR,43.142.232.62/32,no-resolve
+IP-CIDR,43.153.233.166/32,no-resolve
+IP-CIDR,43.153.233.212/32,no-resolve
+IP-CIDR,49.51.78.82/32,no-resolve
+IP-CIDR,115.159.18.59/32,no-resolve
+IP-CIDR,119.28.37.206/32,no-resolve
 IP-CIDR,119.91.245.125/32,no-resolve
 IP-CIDR,119.91.245.213/32,no-resolve
+IP-CIDR,121.5.99.180/32,no-resolve
+IP-CIDR,124.156.233.21/32,no-resolve
+IP-CIDR,170.106.62.85/32,no-resolve
+IP-CIDR,193.112.84.42/32,no-resolve
