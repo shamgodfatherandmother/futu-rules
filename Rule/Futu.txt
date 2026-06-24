@@ -125,3 +125,16 @@ IP-CIDR,14.22.1.193/32,no-resolve
 
 # Tencent IM / push observed in logs
 IP-CIDR,221.229.52.0/24,no-resolve
+
+# 致富证券(Chief Securities)系交易域名 — 强制走代理
+DOMAIN-SUFFIX,chiefgroup.com.hk
+DOMAIN-SUFFIX,zft2000.com
+DOMAIN-SUFFIX,zft2025.com
+DOMAIN-SUFFIX,cg1979.com
+DOMAIN-SUFFIX,toptrader1979.com
+DOMAIN-SUFFIX,chieftrader1979.com
+DOMAIN-SUFFIX,cm-chiefgroup.com
+
+# 推送服务多域名容灾 (engagelab/engageforce/engage7...)
+DOMAIN-KEYWORD,engage
+
